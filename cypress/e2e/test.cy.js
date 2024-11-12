@@ -5,7 +5,7 @@
 import { faker } from '@faker-js/faker'
 import elements from '../support/elements'
 
-describe('Sample Test Cases', () => {
+describe('Student Portal Smoke Test', () => {
   it('verify user can see login to the portal and see the home page', () => {
     cy.login()
     cy.get(elements.banner).should('have.text', 'Existing Students')
@@ -66,7 +66,7 @@ describe('Sample Test Cases', () => {
       cy.get(elements.studentOption).contains('delete').click()
 
       // after deletion, search should return nothing
-      cy.get(elements.search).type(fullName)
+      cy.get(elements.search).type(fullName + '{enter}')
       cy.get(elements.users).should('have.length', 0)
     })
   })

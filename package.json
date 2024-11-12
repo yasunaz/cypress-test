@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Demo cypress test automation framework",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --headed",
+    "cy:run:chrome": "npx cypress run --headed --browser chrome",
+    "cy:run:firefox": "npx cypress run --headed --browser firefox"
   },
   "keywords": [],
   "author": "Nijat Muhtar",

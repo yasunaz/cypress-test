@@ -9,3 +9,4 @@ cypress/reports
 cypress/screenshots
 cypress/videos
 .npmrc
+.vscode/

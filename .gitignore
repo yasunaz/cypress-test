@@ -1,0 +1,11 @@
+node_modules
+cypress/downloads
+*.log
+.settings
+.project
+.DS_Store
+cypress.env.json
+cypress/reports
+cypress/screenshots
+cypress/videos
+.npmrc
